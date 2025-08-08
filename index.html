@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CureStack - Medical Inventory Management</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="loading-screen">
+        <div class="loading-content">
+            <h1>CureStack</h1>
+            <p>Medical Inventory</p>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <p>Powered By Codrenix</p>
+        </div>
+    </div>
+
+    <header>
+        <div class="container">
+            <h1>CureStack</h1>
+            <button class="hamburger" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Dashboard</a></li>
+                    <li><a href="inventory.html">Inventory</a></li>
+                    <li><a href="reports.html">Reports & Alerts</a></li>
+                    <li><button id="theme-toggle" class="btn theme-toggle">Toggle Theme</button></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="dashboard">
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <h3>Total Items</h3>
+                        <p id="total-items">0</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Out of Stock</h3>
+                        <p id="out-of-stock">0</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Low Stock</h3>
+                        <p id="low-stock">0</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Expiring Soon</h3>
+                        <p id="expiring-soon">0</p>
+                    </div>
+                </div>
+
+                <div class="alert-sections">
+                    <div class="alert-section">
+                        <h3>Low Stock Items</h3>
+                        <div class="table-container">
+                            <table id="low-stock-table">
+                                <thead>
+                                    <tr>
+                                        <th>Name</th>
+                                        <th>SKU</th>
+                                        <th>Current Stock</th>
+                                        <th>Threshold</th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="alert-section">
+                        <h3>Items Expiring Soon</h3>
+                        <div class="table-container">
+                            <table id="expiring-table">
+                                <thead>
+                                    <tr>
+                                        <th>Name</th>
+                                        <th>SKU</th>
+                                        <th>Expiration Date</th>
+                                        <th>Days Left</th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 CureStack - Medical Inventory System. All rights reserved by CODRENIX.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Contact Us</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+    <script src="js/dashboard.js"></script>
+    <script src="js/theme.js"></script>
